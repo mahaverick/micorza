@@ -1,0 +1,36 @@
+{
+  "name": "micorza",
+  "version": "1.0.0",
+  "description": "Global Environmental and Economic Impact Analyzer (Micorza Assignment)",
+  "main": "index.js",
+  "author": "Abhijeet Mahavarkar <mahavarkar.abhi@gmail.com> (https://mahaverick.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "npm run build:frontend && npm run build:backend",
+    "preview": "concurrently \"npm run preview:frontend\" \"npm run preview:backend\"",
+    "prod": "npm run build && npm run preview",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "preview:frontend": "cd frontend && npm run preview",
+    "dev:backend": "cd backend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "preview:backend": "cd backend && npm run preview",
+    "clean:dist": "rimraf ./backend/dist && rimraf ./frontend/dist",
+    "clean:modules": "rimraf ./node_modules"
+  },
+  "workspaces": {
+    "packages": [
+      "frontend",
+      "backend"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "rimraf": "^6.0.1"
+  }
+}

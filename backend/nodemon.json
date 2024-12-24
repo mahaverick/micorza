@@ -1,0 +1,6 @@
+{
+  "watch": ["src/**/*", "drizzle.config.ts"],
+  "ext": "ts,js",
+  "ignore": ["node_modules/**/*", "dist/**/*"],
+  "exec": "npx ts-node --files -r tsconfig-paths/register src/index.ts"
+}
