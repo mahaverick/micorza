@@ -12,7 +12,6 @@ import {
   Forward,
   Frame,
   Home,
-  LayoutDashboard,
   LogOut,
   LucideIcon,
   MoreHorizontal,
@@ -59,9 +58,6 @@ type NavItemType = {
 
 const navItems: NavItemType[] = [
   { to: '/dashboard', icon: Home, label: 'Home' },
-  { to: '/organizations', icon: LayoutDashboard, label: 'Organizations' },
-  { to: '/institutes', icon: LayoutDashboard, label: 'Institutes' },
-  { to: '/courses', icon: LayoutDashboard, label: 'Courses' },
   { to: '/users', icon: Users, label: 'Users' },
   { to: '/analytics', icon: BarChart3, label: 'Analytics' },
 ]

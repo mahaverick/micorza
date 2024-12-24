@@ -19,7 +19,7 @@ This is a core server for Micorza. It handles all the backend operations, includ
 `SMTP_PORT=2525`
 `SMTP_USERNAME=`
 `SMTP_PASSWORD=`
-`EMAIL_FROM=noreply@micorza.com`
+`FROM_EMAIL=noreply@micorza.com`
 
 ### Run the development server
 

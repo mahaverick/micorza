@@ -31,6 +31,7 @@ class Mailer {
     this.transporter = createTransport({
       host: SMTP_CREDENTIALS.host,
       port: SMTP_CREDENTIALS.port,
+      secure: SMTP_CREDENTIALS.secure,
       auth: {
         user: SMTP_CREDENTIALS.username,
         pass: SMTP_CREDENTIALS.password,

@@ -24,7 +24,6 @@ interface User {
   role: string
   avatar: string
   initials: string
-  organizations: string[]
 }
 
 interface BreadcrumbItem {

@@ -67,14 +67,7 @@ const Login = () => {
       dispatch(setAuthToken({ token: accessToken }))
       dispatch(setAuthUser({ user }))
 
-      // Check if user has organizations
-      if (user.organizations && user.organizations.length > 0) {
-        // Redirect to dashboard with default organization
-        navigate('/dashboard')
-      } else {
-        // Redirect to create organization form
-        navigate('/organizations/create')
-      }
+      navigate('/dashboard')
     },
     onError: (error: AxiosError<ErrorResponse>) => {
       if (error.response?.data?.errors?.email?._errors.includes('Email not verified')) {

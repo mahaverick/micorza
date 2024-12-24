@@ -21,7 +21,6 @@ const queryClient = new QueryClient({
   },
 })
 
-// setupAuthPersistence(store)
 httpInterceptors.attach(store)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
